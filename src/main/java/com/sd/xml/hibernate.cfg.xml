@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+<property name="hibernate.connection.username">skarre</property>
+<property name="hibernate.connection.password">P@ssw0rd!!</property>
+<property name="hibernate.connection.pool_size">10</property>
+<property name="hibernate.connection.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+<property name="hibernate.show_sql">true</property>
+ <property name="hibernate.hbm2ddl.auto">create</property>
+<mapping class="com.sd.entity.Order"/>
+<mapping class="com.sd.entity.Student"/>
+<mapping class="com.sd.entity.Customer"/>
+<mapping class="com.sd.entity.TransactionList"/>
+<mapping class="com.sd.entity.Employe"/>
+<mapping class="com.sd.entity.Salary"/>
+<mapping class="com.sd.entity.Address"/>
+<mapping class="com.sd.entity.Department"/>
+<mapping class="com.sd.entity.CustomerLogin"/>
+<mapping class="com.sd.entity.Author"/>
+<mapping class="com.sd.entity.Book"/>
+<mapping class="com.sd.entity.Laptop"/>
+
+</session-factory>
+
+</hibernate-configuration>
